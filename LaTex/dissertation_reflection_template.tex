@@ -1,0 +1,72 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Page Setup & Margins ---
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{lipsum}
+
+% --- Font Selection (Times New Roman) ---
+\usepackage{newtxtext,newtxmath} % Standard Times New Roman for pdfLaTeX
+
+% --- Formatting & Utilities ---
+\usepackage{microtype}      % Fine-tuning typography
+\usepackage{setspace}        % Line spacing
+\usepackage{xcolor}          % Colors
+\usepackage{titlesec}        % Section heading styling
+\usepackage{enumitem}        % Bullet formatting
+\usepackage{hyperref}        % Hyperlinks
+
+% Line spacing set to 1.15 for optimum readability and layout fit
+\setstretch{1.15}
+
+% Clean Heading Styles
+\titleformat{\section}{\large\bfseries\rmfamily}{\thesection}{1em}{}[\vspace{-0.5em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\titleformat{\subsection}{\bfseries\rmfamily}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+% Itemize Spacing
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.5em}
+
+% Suppress Page Numbering for single-page layout (optional)
+\pagestyle{empty}
+
+\begin{document}
+
+% --- Header / Title Block ---
+\begin{center}
+    {\Large \bfseries Individual Reflection on Group Project} \\[0.3em]
+    {\small \textbf{Project Title:} Your Project Title here} \\[0.2em]
+    \rule{\textwidth}{1pt}
+\end{center}
+
+\vspace{-0.5em}
+\noindent
+\begin{tabular}{@{}ll p{0.5em} ll@{}}
+    \textbf{Student Name:} & xxxxxxx & & \textbf{Student ID:} & xxxxxxx \\
+    \textbf{Team / Group:} & Group xx & & \textbf{Supervisor:} & xxxxxxxx \\
+\end{tabular}
+
+\vspace{0.2em}
+
+% --- Section 1: Team Dissertation Experience ---
+\section*{1. Your views on the completing the project as a team}
+\lipsum[1][1-7]
+
+% --- Section 2: Project Management & Execution Processes ---
+\section*{2. Your views on project management and execution of your team}
+\lipsum[2][1-8]
+
+% --- Section 3: Critical Reflections: What Worked, What Did Not, and Adaptations ---
+\section*{3. Reflections on Successes, Failures, and Retrospective Changes}
+\begin{itemize}
+    \item \textbf{What Worked Well:} \lipsum[3][1-5].
+    \item \textbf{What Did Not Work Well:} \lipsum[4][1-6].
+    \item \textbf{What I Would Do Differently:} \lipsum[5][1-6].
+\end{itemize}
+
+% --- Section 4: Concluding Personal Reflections ---
+\section*{4. Any other reflections}
+\lipsum[6][1-6].
+
+\end{document}
